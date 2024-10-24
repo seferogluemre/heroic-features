@@ -1,7 +1,17 @@
-function Card({ content, title, icon }) {
+function Card({ content, title, icon: Icon }) {
   return (
-    <div>
-      <div className="col-lg-4 col-sm-12 col-md-4">{content}</div>
+    <div className="col-lg-6 col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+      <div className="card">
+        <div className="icon-box">
+          <Icon />
+        </div>
+        <div className="card-body">
+          <div>
+            <h5 className="my-3">{title}</h5>
+          </div>
+          <div>{content}</div>
+        </div>
+      </div>
     </div>
   );
 }

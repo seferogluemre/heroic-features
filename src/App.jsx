@@ -11,6 +11,7 @@ import { FcApproval } from "react-icons/fc";
 import { BsBootstrap } from "react-icons/bs";
 import { BsCardHeading } from "react-icons/bs";
 import CardComp from "./components/Card";
+import { Container, Row } from "react-bootstrap";
 
 const data = [
   {
@@ -60,9 +61,13 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
-      {data.map(({ icon, content, title, id }) => (
-        <CardComp key={id} content={content} icon={icon} title={title} />
-      ))}
+      <Container className="card-container">
+        <Row className="row-gap-5">
+          {data.map(({ icon, content, title, id }) => (
+            <CardComp key={id} content={content} icon={icon} title={title} />
+          ))}
+        </Row>
+      </Container>
 
       <Footer />
     </>

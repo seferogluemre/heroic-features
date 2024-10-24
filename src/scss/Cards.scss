@@ -1,0 +1,39 @@
+.card {
+  background-color: rgb(235, 234, 234);
+  border: none;
+  border-radius: 15px;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 2px 3px 20px gray;
+
+    .icon-box {
+      transform: scale(1.05) translateY(-50%);
+    }
+  }
+
+  .icon-box {
+    background-color: blue;
+    color: aliceblue;
+    font-size: 40px;
+    width: 70px;
+    height: 80px !important;
+    transform: translateY(-50%);
+    border-radius: 25%;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+}
