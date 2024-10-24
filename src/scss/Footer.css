@@ -1,0 +1,24 @@
+.footer {
+  background-color: rgb(48, 45, 46);
+  color: aliceblue;
+  padding: 15px;
+}
+.footer .social-links .links {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+}
+.footer .social-links .links .link-item {
+  border-radius: 30%;
+  margin: 5px;
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+  padding: 7px;
+  padding-top: 0px;
+}
+.footer .social-links .links .link-item:hover {
+  background-color: #789dbc;
+  transform: scale(1.02) translateY(-12px);
+  cursor: pointer;
+}/*# sourceMappingURL=Footer.css.map */
