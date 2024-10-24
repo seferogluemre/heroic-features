@@ -1,0 +1,5 @@
+componentleri oluşturduktan sonra cartlarda şöyle bir şey yapılcak 
+
+ana jsx de obje tanımlancak ve herbir eleman map ile dönüldükten sonra CardComponenti çagrılcak ve props olarak geçilcek ve iconlarda font awesomdan çekilip import edildikten sonra değer olarak verilcek
+footerda yapılıp proje tamamlanıcak
+
