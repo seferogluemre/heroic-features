@@ -1,4 +1,19 @@
 function Navbar() {
+  const navs = [
+    {
+      id: "1",
+      nav: "Home",
+    },
+    {
+      id: "2",
+      nav: "About",
+    },
+    {
+      id: "3",
+      nav: "Contact",
+    },
+  ];
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark ">
@@ -22,25 +37,13 @@ function Navbar() {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-light"
-                  aria-current="page"
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-light" href="#">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-light" href="#">
-                  Contact
-                </a>
-              </li>
+              {navs.map(({ nav, id }) => (
+                <li key={id} className="nav-item">
+                  <a className="nav-link text-light" href="#">
+                    {nav}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

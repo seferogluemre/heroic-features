@@ -68,7 +68,6 @@ function App() {
           ))}
         </Row>
       </Container>
-
       <Footer />
     </>
   );
